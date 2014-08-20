@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SQLDatabaseProj.publish.xml" />
+    <None Include="Localhost.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="domain.sql" />
@@ -111,5 +112,8 @@
     <Build Include="power.sql" />
     <Build Include="skill.sql" />
     <Build Include="spell.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Data.Class.sql" />
   </ItemGroup>
 </Project>
