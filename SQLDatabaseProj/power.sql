@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[power]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+  [name] VARCHAR(100),
+  discipline VARCHAR(255),
+  subdiscipline VARCHAR(255),
+  descriptor VARCHAR(255),
+  [level] VARCHAR(255),
+  display VARCHAR(255),
+  manifesting_time VARCHAR(255),
+  range VARCHAR(255),
+  target VARCHAR(255),
+  area VARCHAR(255),
+  effect VARCHAR(255),
+  duration VARCHAR(255),
+  saving_throw VARCHAR(255),
+  power_points VARCHAR(255),
+  power_resistance VARCHAR(255),
+  short_description TEXT,
+  xp_cost TEXT,
+  description TEXT,
+  augment TEXT,
+  full_text TEXT,
+  reference VARCHAR(255)
+)
