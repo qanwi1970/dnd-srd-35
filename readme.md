@@ -1,0 +1,1 @@
+This project aims to take the SQL database scripts available at <site name here> and take it further to a cloud deployed database, with a companion RESTful service for accessing the data. I may follow it up with a simple web site for viewing the data.
