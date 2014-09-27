@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ClassesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="class">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" />
+          <Property Name="type" Type="varchar" MaxLength="255" />
+          <Property Name="alignment" Type="varchar" MaxLength="255" />
+          <Property Name="hit_die" Type="varchar" MaxLength="255" />
+          <Property Name="class_skills" Type="text" />
+          <Property Name="skill_points" Type="varchar" MaxLength="255" />
+          <Property Name="skill_points_ability" Type="varchar" MaxLength="255" />
+          <Property Name="spell_stat" Type="varchar" MaxLength="255" />
+          <Property Name="proficiencies" Type="text" />
+          <Property Name="spell_type" Type="varchar" MaxLength="255" />
+          <Property Name="epic_feat_base_level" Type="varchar" MaxLength="255" />
+          <Property Name="epic_feat_interval" Type="varchar" MaxLength="255" />
+          <Property Name="epic_feat_list" Type="text" />
+          <Property Name="epic_full_text" Type="text" />
+          <Property Name="req_race" Type="varchar" MaxLength="255" />
+          <Property Name="req_weapon_proficiency" Type="varchar" MaxLength="255" />
+          <Property Name="req_base_attack_bonus" Type="varchar" MaxLength="255" />
+          <Property Name="req_skill" Type="varchar" MaxLength="255" />
+          <Property Name="req_feat" Type="varchar" MaxLength="255" />
+          <Property Name="req_spells" Type="varchar" MaxLength="255" />
+          <Property Name="req_languages" Type="varchar" MaxLength="255" />
+          <Property Name="req_psionics" Type="varchar" MaxLength="255" />
+          <Property Name="req_epic_feat" Type="varchar" MaxLength="255" />
+          <Property Name="req_special" Type="varchar" MaxLength="255" />
+          <Property Name="spell_list_1" Type="text" />
+          <Property Name="spell_list_2" Type="varchar" MaxLength="255" />
+          <Property Name="spell_list_3" Type="varchar" MaxLength="255" />
+          <Property Name="spell_list_4" Type="varchar" MaxLength="255" />
+          <Property Name="spell_list_5" Type="varchar" MaxLength="255" />
+          <Property Name="full_text" Type="text" />
+          <Property Name="reference" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="ClassesModelStoreContainer">
+          <EntitySet Name="class" EntityType="Self.class" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ClassesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="class">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="alignment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="hit_die" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="class_skills" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="skill_points" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="skill_points_ability" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spell_stat" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="proficiencies" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="spell_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="epic_feat_base_level" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="epic_feat_interval" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="epic_feat_list" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="epic_full_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="req_race" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_weapon_proficiency" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_base_attack_bonus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_skill" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_feat" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_spells" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_languages" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_psionics" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_epic_feat" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="req_special" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spell_list_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="spell_list_2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spell_list_3" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spell_list_4" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spell_list_5" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="full_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="reference" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ClassesContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="classes" EntityType="Self.class" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ClassesModelStoreContainer" CdmEntityContainer="ClassesContext">
+          <EntitySetMapping Name="classes">
+            <EntityTypeMapping TypeName="ClassesModel.class">
+              <MappingFragment StoreEntitySet="class">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="alignment" ColumnName="alignment" />
+                <ScalarProperty Name="hit_die" ColumnName="hit_die" />
+                <ScalarProperty Name="class_skills" ColumnName="class_skills" />
+                <ScalarProperty Name="skill_points" ColumnName="skill_points" />
+                <ScalarProperty Name="skill_points_ability" ColumnName="skill_points_ability" />
+                <ScalarProperty Name="spell_stat" ColumnName="spell_stat" />
+                <ScalarProperty Name="proficiencies" ColumnName="proficiencies" />
+                <ScalarProperty Name="spell_type" ColumnName="spell_type" />
+                <ScalarProperty Name="epic_feat_base_level" ColumnName="epic_feat_base_level" />
+                <ScalarProperty Name="epic_feat_interval" ColumnName="epic_feat_interval" />
+                <ScalarProperty Name="epic_feat_list" ColumnName="epic_feat_list" />
+                <ScalarProperty Name="epic_full_text" ColumnName="epic_full_text" />
+                <ScalarProperty Name="req_race" ColumnName="req_race" />
+                <ScalarProperty Name="req_weapon_proficiency" ColumnName="req_weapon_proficiency" />
+                <ScalarProperty Name="req_base_attack_bonus" ColumnName="req_base_attack_bonus" />
+                <ScalarProperty Name="req_skill" ColumnName="req_skill" />
+                <ScalarProperty Name="req_feat" ColumnName="req_feat" />
+                <ScalarProperty Name="req_spells" ColumnName="req_spells" />
+                <ScalarProperty Name="req_languages" ColumnName="req_languages" />
+                <ScalarProperty Name="req_psionics" ColumnName="req_psionics" />
+                <ScalarProperty Name="req_epic_feat" ColumnName="req_epic_feat" />
+                <ScalarProperty Name="req_special" ColumnName="req_special" />
+                <ScalarProperty Name="spell_list_1" ColumnName="spell_list_1" />
+                <ScalarProperty Name="spell_list_2" ColumnName="spell_list_2" />
+                <ScalarProperty Name="spell_list_3" ColumnName="spell_list_3" />
+                <ScalarProperty Name="spell_list_4" ColumnName="spell_list_4" />
+                <ScalarProperty Name="spell_list_5" ColumnName="spell_list_5" />
+                <ScalarProperty Name="full_text" ColumnName="full_text" />
+                <ScalarProperty Name="reference" ColumnName="reference" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

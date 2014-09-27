@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ClassTableModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="class_table">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" />
+          <Property Name="level" Type="varchar" MaxLength="255" />
+          <Property Name="base_attack_bonus" Type="varchar" MaxLength="255" />
+          <Property Name="fort_save" Type="varchar" MaxLength="255" />
+          <Property Name="ref_save" Type="varchar" MaxLength="255" />
+          <Property Name="will_save" Type="varchar" MaxLength="255" />
+          <Property Name="caster_level" Type="varchar" MaxLength="255" />
+          <Property Name="points_per_day" Type="varchar" MaxLength="255" />
+          <Property Name="ac_bonus" Type="varchar" MaxLength="255" />
+          <Property Name="flurry_of_blows" Type="varchar" MaxLength="255" />
+          <Property Name="bonus_spells" Type="varchar" MaxLength="255" />
+          <Property Name="powers_known" Type="varchar" MaxLength="255" />
+          <Property Name="unarmored_speed_bonus" Type="varchar" MaxLength="255" />
+          <Property Name="unarmed_damage" Type="varchar" MaxLength="255" />
+          <Property Name="power_level" Type="varchar" MaxLength="255" />
+          <Property Name="special" Type="varchar" MaxLength="255" />
+          <Property Name="slots_0" Type="varchar" MaxLength="255" />
+          <Property Name="slots_1" Type="varchar" MaxLength="255" />
+          <Property Name="slots_2" Type="varchar" MaxLength="255" />
+          <Property Name="slots_3" Type="varchar" MaxLength="255" />
+          <Property Name="slots_4" Type="varchar" MaxLength="255" />
+          <Property Name="slots_5" Type="varchar" MaxLength="255" />
+          <Property Name="slots_6" Type="varchar" MaxLength="255" />
+          <Property Name="slots_7" Type="varchar" MaxLength="255" />
+          <Property Name="slots_8" Type="varchar" MaxLength="255" />
+          <Property Name="slots_9" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_0" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_1" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_2" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_3" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_4" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_5" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_6" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_7" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_8" Type="varchar" MaxLength="255" />
+          <Property Name="spells_known_9" Type="varchar" MaxLength="255" />
+          <Property Name="reference" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="ClassTableModelStoreContainer">
+          <EntitySet Name="class_table" EntityType="Self.class_table" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ClassTableModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="class_table">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="level" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="base_attack_bonus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="fort_save" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ref_save" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="will_save" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="caster_level" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="points_per_day" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ac_bonus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="flurry_of_blows" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="bonus_spells" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="powers_known" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="unarmored_speed_bonus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="unarmed_damage" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="power_level" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="special" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_0" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_3" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_4" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_5" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_6" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_7" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_8" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="slots_9" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_0" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_3" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_4" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_5" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_6" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_7" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_8" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="spells_known_9" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="reference" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ClassTableEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="class_table" EntityType="Self.class_table" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ClassTableModelStoreContainer" CdmEntityContainer="ClassTableEntities">
+          <EntitySetMapping Name="class_table">
+            <EntityTypeMapping TypeName="ClassTableModel.class_table">
+              <MappingFragment StoreEntitySet="class_table">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="level" ColumnName="level" />
+                <ScalarProperty Name="base_attack_bonus" ColumnName="base_attack_bonus" />
+                <ScalarProperty Name="fort_save" ColumnName="fort_save" />
+                <ScalarProperty Name="ref_save" ColumnName="ref_save" />
+                <ScalarProperty Name="will_save" ColumnName="will_save" />
+                <ScalarProperty Name="caster_level" ColumnName="caster_level" />
+                <ScalarProperty Name="points_per_day" ColumnName="points_per_day" />
+                <ScalarProperty Name="ac_bonus" ColumnName="ac_bonus" />
+                <ScalarProperty Name="flurry_of_blows" ColumnName="flurry_of_blows" />
+                <ScalarProperty Name="bonus_spells" ColumnName="bonus_spells" />
+                <ScalarProperty Name="powers_known" ColumnName="powers_known" />
+                <ScalarProperty Name="unarmored_speed_bonus" ColumnName="unarmored_speed_bonus" />
+                <ScalarProperty Name="unarmed_damage" ColumnName="unarmed_damage" />
+                <ScalarProperty Name="power_level" ColumnName="power_level" />
+                <ScalarProperty Name="special" ColumnName="special" />
+                <ScalarProperty Name="slots_0" ColumnName="slots_0" />
+                <ScalarProperty Name="slots_1" ColumnName="slots_1" />
+                <ScalarProperty Name="slots_2" ColumnName="slots_2" />
+                <ScalarProperty Name="slots_3" ColumnName="slots_3" />
+                <ScalarProperty Name="slots_4" ColumnName="slots_4" />
+                <ScalarProperty Name="slots_5" ColumnName="slots_5" />
+                <ScalarProperty Name="slots_6" ColumnName="slots_6" />
+                <ScalarProperty Name="slots_7" ColumnName="slots_7" />
+                <ScalarProperty Name="slots_8" ColumnName="slots_8" />
+                <ScalarProperty Name="slots_9" ColumnName="slots_9" />
+                <ScalarProperty Name="spells_known_0" ColumnName="spells_known_0" />
+                <ScalarProperty Name="spells_known_1" ColumnName="spells_known_1" />
+                <ScalarProperty Name="spells_known_2" ColumnName="spells_known_2" />
+                <ScalarProperty Name="spells_known_3" ColumnName="spells_known_3" />
+                <ScalarProperty Name="spells_known_4" ColumnName="spells_known_4" />
+                <ScalarProperty Name="spells_known_5" ColumnName="spells_known_5" />
+                <ScalarProperty Name="spells_known_6" ColumnName="spells_known_6" />
+                <ScalarProperty Name="spells_known_7" ColumnName="spells_known_7" />
+                <ScalarProperty Name="spells_known_8" ColumnName="spells_known_8" />
+                <ScalarProperty Name="spells_known_9" ColumnName="spells_known_9" />
+                <ScalarProperty Name="reference" ColumnName="reference" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
